@@ -9,6 +9,15 @@ Você pode encontrar os originais em:
 - [balta.io](https://balta.io/cursos/fundamentos-ia-generativa-devs-dotnet)
 - [GitHub](https://github.com/balta-io/2514)
 
+## Índice
+
+- [O que é IA Generativa?](docs/o-que-e-ia-generativa.md)
+- [Como funciona a IA Generativa?](docs/como-funciona-a-ia-generativa.md)
+
+## Tecnologias Utilizadas
+
+- [Visual Studio Code](https://code.visualstudio.com)
+
 ## Histórico de alterações
 
 Acompanhe as [modificações][changelog].
