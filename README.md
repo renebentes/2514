@@ -14,6 +14,7 @@ Você pode encontrar os originais em:
 - [O que é IA Generativa?](docs/o-que-e-ia-generativa.md)
 - [Como funciona a IA Generativa?](docs/como-funciona-a-ia-generativa.md)
 - [Como atualizar e especificar uma LLM?](docs/como-atualizar-e-especificar-uma-llm.md)
+- [Busca Vetorial](docs/busca-vetorial.md)
 
 ## Tecnologias Utilizadas
 
