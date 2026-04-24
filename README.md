@@ -15,10 +15,14 @@ Você pode encontrar os originais em:
 - [Como funciona a IA Generativa?](docs/como-funciona-a-ia-generativa.md)
 - [Como atualizar e especificar uma LLM?](docs/como-atualizar-e-especificar-uma-llm.md)
 - [Busca Vetorial](docs/busca-vetorial.md)
+- [Demos](docs/demos.md)
 
 ## Tecnologias Utilizadas
 
 - [Visual Studio Code](https://code.visualstudio.com)
+- [Docker](https://docker.com/get-started/)
+- [Ollama](https://ollama.com)
+- [.NET](https://dot.net)
 
 ## Histórico de alterações
 
