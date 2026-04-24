@@ -1,0 +1,44 @@
+name: ia-fundamentals
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+    networks:
+      - default
+
+  ollama-init:
+    image: ollama/ollama
+    depends_on:
+      ollama:
+        condition: service_healthy
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "ollama pull phi3:mini &&
+       echo 'phi3:mini model ready'"
+
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+
+    restart: "no"  # run once and exit
+
+    networks:
+      - default
+
+volumes:
+  ollama_data:
+
+networks:
+  default:
+    driver: bridge
